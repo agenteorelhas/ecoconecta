@@ -1,0 +1,72 @@
+/* EcoBot – Assistente de FAQ */
+.ecobot-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .75rem;
+}
+.ecobot-btn {
+  background: var(--verde-escuro);
+  color: var(--branco);
+  border: none;
+  padding: .75rem 1.25rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,.35);
+  transition: background var(--transicao);
+}
+.ecobot-btn:hover, .ecobot-btn:focus {
+  background: var(--verde-medio);
+  outline: 3px solid var(--amarelo);
+}
+.ecobot-painel {
+  background: var(--branco);
+  border: 2px solid var(--verde-medio);
+  border-radius: var(--raio);
+  width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 8px 30px rgba(0,0,0,.25);
+  overflow: hidden;
+}
+.ecobot-titulo {
+  background: var(--verde-escuro);
+  color: var(--branco);
+  padding: .75rem 1rem;
+  margin: 0;
+  font-size: 1rem;
+}
+.ecobot-chat {
+  height: 220px;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  background: var(--cinza-claro);
+}
+.ecobot-chat p { margin: 0; font-size: .92rem; }
+.ecobot-user { align-self: flex-end; background: var(--verde-suave); padding: .4rem .75rem; border-radius: 12px 12px 0 12px; }
+.ecobot-bot  { align-self: flex-start; background: var(--branco); padding: .4rem .75rem; border-radius: 12px 12px 12px 0; border: 1px solid #ddd; }
+.ecobot-input-area {
+  display: flex;
+  gap: .5rem;
+  padding: .75rem;
+  border-top: 1px solid #ddd;
+}
+.ecobot-input-area input {
+  flex: 1;
+  padding: .5rem .75rem;
+  font-size: .9rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+.ecobot-input-area .btn {
+  padding: .5rem 1rem;
+  font-size: .9rem;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vídeos, podcast e mapa sobre lixo eletrônico e pontos de coleta em São Paulo.">
+  <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
+  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
+  <title>EcoConecta | Mídia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ecobot.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span class="logo-text">EcoConecta</span>
+      </a>
+      <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <nav id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html" aria-current="page">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Hospedagem</a></li>
+        </ul>
+      </nav>
+      <button id="btn-contraste" class="btn btn-secundario" aria-pressed="false" style="margin-left:.5rem;font-size:.85rem;padding:.4rem .9rem;">◑ Alto Contraste</button>
+    </div>
+  </header>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+  <div class="page-header">
+    <h1>Mídia</h1>
+    <p>Vídeo, áudio e conteúdos incorporados para aprender sobre o lixo eletrônico.</p>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+    <section aria-labelledby="sec-video">
+      <div class="container">
+        <h2 id="sec-video">Vídeo institucional</h2>
+        <div class="midia-wrapper">
+          <h3>EcoConecta em 3 segundos (arquivo local)</h3>
+          <video controls preload="metadata" width="800" height="450" poster="https://placehold.co/800x450/1b5e20/ffffff.png?text=Video+EcoConecta" aria-describedby="desc-video">
+            <source src="assets/ewaste-video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <p id="desc-video" class="texto-fonte">Vídeo sobre lixo eletrônico (arquivo local). Descrição: tela verde com o nome EcoConecta. Sem fala, por isso não possui legendas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-audio" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-audio">Podcast EcoConecta</h2>
+        <div class="midia-wrapper">
+          <h3>Episódio 1 – Para onde vai o seu celular velho?</h3>
+          <audio controls preload="metadata">
+            <source src="assets/podcast-ewaste.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+          <details>
+            <summary>Transcrição do episódio</summary>
+            <p>Arquivo demonstrativo do projeto acadêmico. Transcrição: "Olá! Este é o podcast EcoConecta. Hoje vamos falar sobre o destino dos celulares antigos e onde descartá-los corretamente."</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-youtube">
+      <div class="container">
+        <h2 id="sec-youtube">Vídeo: impacto do lixo eletrônico</h2>
+        <div class="iframe-wrapper">
+          <iframe src="https://www.youtube-nocookie.com/embed/VYLLhCnPnVc" title="Vídeo do YouTube: Impacto do lixo eletrônico no meio ambiente e como descartar de forma correta (canal Circuito Ambiental)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="texto-fonte">Fonte: canal Circuito Ambiental, YouTube. Ative as legendas automáticas no player, se necessário.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-mapa" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-mapa">Mapa: ecopontos de São Paulo</h2>
+        <p>Região central de São Paulo, onde estão vários ecopontos da prefeitura que aceitam pequenos eletrônicos. Consulte a lista completa no site da Prefeitura de São Paulo.</p>
+        <div class="iframe-wrapper">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-46.7%2C-23.6%2C-46.5%2C-23.5&amp;layer=mapnik" title="Mapa do OpenStreetMap da região central de São Paulo" loading="lazy"></iframe>
+        </div>
+        <p class="texto-fonte">Mapa: © colaboradores do OpenStreetMap.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ECOBOT -->
+  <div class="ecobot-container" aria-live="polite">
+    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
+      🤖 EcoBot
+    </button>
+    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
+      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
+      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ecobot-input-area">
+        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ecobot-enviar" class="btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>EcoConecta</h3>
+        <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
+      </div>
+      <div>
+        <h3>Páginas</h3>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="impacto.html">Dados de Impacto</a>
+        <a href="noticias.html">Notícias</a>
+      </div>
+      <div>
+        <h3>Acesso Rápido</h3>
+        <a href="acessibilidade.html">Acessibilidade</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="midia.html">Mídia</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div>
+        <h3>Equipe</h3>
+        <p style="font-size:.9rem;opacity:.85;">Joaquim Martins · Gabriel Cabrera · Guilherme Reis · Gabriel Franco</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

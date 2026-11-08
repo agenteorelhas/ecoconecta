@@ -1,0 +1,31 @@
+---
+description: Padrão de mensagens de commit e fluxo de branches (usar quando citada)
+---
+# Commits
+
+## Objetivo
+Manter um histórico legível que sirva de evidência do trabalho de cada integrante.
+
+## Contexto
+Repositório no GitHub com branch `main` publicada no GitHub Pages. Mudanças entram por pull request.
+
+## Regras
+- Formato: `tipo: descrição curta em pt-BR` (máx. 72 caracteres).
+- Tipos: `feat`, `fix`, `style`, `docs`, `refactor`, `chore`, `test`.
+- Um assunto por commit; cada integrante commita a própria parte.
+- Trabalhar em branch `feature/...` ou `fix/...` e abrir PR para `main`.
+- Nunca usar `git push --force` na `main`.
+
+## Exemplo
+Commit real deste repositório:
+```
+feat: adiciona 9 páginas internas, lightbox, mídias locais e ajustes de validação
+```
+
+## Erros a evitar
+- Mensagens vagas como "update" ou "ajustes".
+- Commitar chave, token ou arquivo pessoal.
+- Fazer merge do próprio PR sem revisão de outro integrante.
+
+## Quando perguntar
+Antes de reescrever histórico ou fazer merge na `main`.

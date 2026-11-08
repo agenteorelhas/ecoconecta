@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Medidas de acessibilidade e inclusão para pessoas com deficiência no site EcoConecta.">
+  <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
+  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
+  <title>EcoConecta | Acessibilidade</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ecobot.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span class="logo-text">EcoConecta</span>
+      </a>
+      <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <nav id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html" aria-current="page">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Hospedagem</a></li>
+        </ul>
+      </nav>
+      <button id="btn-contraste" class="btn btn-secundario" aria-pressed="false" style="margin-left:.5rem;font-size:.85rem;padding:.4rem .9rem;">◑ Alto Contraste</button>
+    </div>
+  </header>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+  <div class="page-header">
+    <h1>Acessibilidade</h1>
+    <p>Um site sobre sustentabilidade precisa ser sustentável para todas as pessoas.</p>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+    <section aria-labelledby="sec-compromisso">
+      <div class="container">
+        <h2 id="sec-compromisso">Nosso compromisso com a WCAG 2.1 AA</h2>
+        <p>O EcoConecta segue as <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1, nível AA, e a Lei Brasileira de Inclusão (Lei 13.146/2015). Pessoas com deficiência visual, auditiva, motora ou cognitiva são público prioritário do projeto.</p>
+        <div class="grid-cards">
+          <div class="card"><h3>👁 Perceptível</h3><p>Textos alternativos, contraste adequado e legendas.</p></div>
+          <div class="card"><h3>⌨ Operável</h3><p>Todo o site funciona apenas com o teclado.</p></div>
+          <div class="card"><h3>💡 Compreensível</h3><p>Linguagem simples, idioma declarado e mensagens de erro claras.</p></div>
+          <div class="card"><h3>🧩 Robusto</h3><p>HTML5 semântico e ARIA compatíveis com leitores de tela.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-medidas" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-medidas">Medidas implementadas</h2>
+        <ul class="lista-check">
+          <li><strong>Texto alternativo (alt)</strong> descritivo em todas as imagens informativas.</li>
+          <li><strong>Contraste mínimo de 4,5:1</strong> entre texto e fundo, além do modo de <strong>alto contraste</strong> (botão no topo), que fica salvo no navegador.</li>
+          <li><strong>Navegação por teclado</strong> em menus, botões, formulário, galeria e EcoBot.</li>
+          <li><strong>Idioma declarado</strong> com <code>lang="pt-BR"</code> para a pronúncia correta dos leitores de tela.</li>
+          <li><strong>ARIA</strong>: <code>aria-label</code>, <code>aria-expanded</code>, <code>aria-current</code>, <code>aria-invalid</code> e regiões <code>aria-live</code>.</li>
+          <li><strong>Link "Pular para o conteúdo"</strong> como primeiro item focável de cada página.</li>
+          <li><strong>Foco visível</strong> com contorno amarelo em todos os elementos interativos.</li>
+          <li><strong>Formulário acessível</strong>: cada campo tem <code>&lt;label for&gt;</code> e mensagens de erro lidas pelos leitores de tela.</li>
+          <li><strong>Movimento reduzido</strong>: animações são desativadas quando o sistema pede <code>prefers-reduced-motion</code>.</li>
+          <li><strong>Layout responsivo</strong> que permite zoom de até 200% sem perda de conteúdo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-teclado">
+      <div class="container">
+        <h2 id="sec-teclado">Demonstração: navegue só com o teclado</h2>
+        <div class="tabela-wrapper">
+          <table>
+            <caption>Atalhos de teclado do site</caption>
+            <thead><tr><th scope="col">Tecla</th><th scope="col">O que faz</th></tr></thead>
+            <tbody>
+              <tr><td><kbd>Tab</kbd></td><td>Avança para o próximo link, botão ou campo.</td></tr>
+              <tr><td><kbd>Shift</kbd> + <kbd>Tab</kbd></td><td>Volta para o elemento anterior.</td></tr>
+              <tr><td><kbd>Enter</kbd></td><td>Abre links, aciona botões e envia o formulário.</td></tr>
+              <tr><td><kbd>Espaço</kbd></td><td>Aciona botões (alto contraste, filtros, EcoBot).</td></tr>
+              <tr><td><kbd>Esc</kbd></td><td>Fecha o menu no celular e a imagem ampliada da galeria.</td></tr>
+              <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Rolam a página e escolhem opções na lista de assuntos do formulário.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:1rem;">Experimente: pressione <kbd>Tab</kbd> agora. O primeiro item a receber foco é o link "Pular para o conteúdo principal".</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-declaracao" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-declaracao">Declaração de acessibilidade</h2>
+        <div class="destaque">
+          <p>A equipe EcoConecta declara que este site foi desenvolvido para atender às diretrizes WCAG 2.1 nível AA. A conformidade foi verificada com o W3C Validator, o Lighthouse (Chrome DevTools) e testes manuais de navegação por teclado e com o leitor de tela NVDA.</p>
+          <p>Se você encontrar alguma barreira de acesso, fale conosco pela página de <a href="contato.html">Contato</a> escolhendo o assunto "Dúvida". Responderemos em até 5 dias úteis.</p>
+          <p><strong>Última revisão:</strong> <time datetime="2026-11-07">7 de novembro de 2026</time>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-recursos">
+      <div class="container">
+        <h2 id="sec-recursos">Recursos para pessoas com deficiência</h2>
+        <ul class="lista-check">
+          <li><a href="https://www.nvaccess.org/download/">NVDA</a> – leitor de tela gratuito para Windows.</li>
+          <li><a href="https://support.apple.com/pt-br/guide/voiceover/welcome/mac">VoiceOver</a> – leitor de tela nativo do macOS e iOS.</li>
+          <li><a href="https://support.google.com/accessibility/android/answer/6283677?hl=pt-BR">TalkBack</a> – leitor de tela do Android.</li>
+          <li><a href="https://www.gov.br/governodigital/pt-br/vlibras">VLibras</a> – tradução automática de conteúdo para Libras.</li>
+          <li><a href="https://chromewebstore.google.com/search/high%20contrast">Extensões de alto contraste</a> para o Google Chrome.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ECOBOT -->
+  <div class="ecobot-container" aria-live="polite">
+    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
+      🤖 EcoBot
+    </button>
+    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
+      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
+      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ecobot-input-area">
+        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ecobot-enviar" class="btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>EcoConecta</h3>
+        <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
+      </div>
+      <div>
+        <h3>Páginas</h3>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="impacto.html">Dados de Impacto</a>
+        <a href="noticias.html">Notícias</a>
+      </div>
+      <div>
+        <h3>Acesso Rápido</h3>
+        <a href="acessibilidade.html">Acessibilidade</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="midia.html">Mídia</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div>
+        <h3>Equipe</h3>
+        <p style="font-size:.9rem;opacity:.85;">Joaquim Martins · Gabriel Cabrera · Guilherme Reis · Gabriel Franco</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

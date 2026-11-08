@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dados, tabelas e resultados sobre lixo eletrônico no Brasil e no mundo.">
+  <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
+  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
+  <title>EcoConecta | Impacto</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ecobot.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span class="logo-text">EcoConecta</span>
+      </a>
+      <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <nav id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html" aria-current="page">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Hospedagem</a></li>
+        </ul>
+      </nav>
+      <button id="btn-contraste" class="btn btn-secundario" aria-pressed="false" style="margin-left:.5rem;font-size:.85rem;padding:.4rem .9rem;">◑ Alto Contraste</button>
+    </div>
+  </header>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+  <div class="page-header">
+    <h1>Dados e Impacto</h1>
+    <p>Números que mostram o tamanho do problema e os resultados alcançados pela EcoConecta.</p>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+    <section aria-labelledby="sec-numeros">
+      <div class="container">
+        <h2 id="sec-numeros">Números do lixo eletrônico</h2>
+        <div class="contadores">
+          <div class="contador-item"><span class="contador-numero" data-contador="2.1" data-decimais="1">0</span><span class="contador-legenda">milhões de toneladas de e-waste geradas por ano no Brasil</span></div>
+          <div class="contador-item"><span class="contador-numero" data-contador="62">0</span><span class="contador-legenda">milhões de toneladas geradas no mundo em 2022</span></div>
+          <div class="contador-item"><span class="contador-numero" data-contador="480">0</span><span class="contador-legenda">pontos de coleta mapeados pela EcoRota Digital</span></div>
+          <div class="contador-item"><span class="contador-numero" data-contador="1200">0</span><span class="contador-legenda">kg de eletrônicos destinados corretamente em 2024</span></div>
+        </div>
+        <p class="texto-fonte">Fontes: Global E-waste Monitor 2020 (dado do Brasil) e Global E-waste Monitor 2024 (dado mundial) – UNITAR/ITU. Pontos e quilos: dados internos fictícios do projeto acadêmico.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-regional" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-regional">Impacto regional da EcoRota Digital</h2>
+        <div class="tabela-wrapper">
+          <table>
+            <caption>Pontos de coleta e quilos coletados por região em 2024 (dados fictícios)</caption>
+            <thead><tr><th scope="col">Região</th><th scope="col">Pontos de coleta</th><th scope="col">kg coletados 2024</th><th scope="col">% crescimento</th></tr></thead>
+            <tbody>
+              <tr><td>Norte</td><td>32</td><td>410</td><td>+18%</td></tr>
+              <tr><td>Nordeste</td><td>86</td><td>1.150</td><td>+24%</td></tr>
+              <tr><td>Sudeste</td><td>238</td><td>3.870</td><td>+31%</td></tr>
+              <tr><td>Sul</td><td>84</td><td>1.320</td><td>+27%</td></tr>
+              <tr><td>Centro-Oeste</td><td>40</td><td>520</td><td>+21%</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Total</th><td>480</td><td>7.270</td><td>+28% (média)</td></tr></tfoot>
+          </table>
+        </div>
+        <p class="texto-fonte">Os 1.200 kg destinados diretamente pela equipe fazem parte do total coletado pela rede de parceiros.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-grafico">
+      <div class="container">
+        <h2 id="sec-grafico">Maiores geradores de lixo eletrônico</h2>
+        <p id="desc-grafico">Geração anual de e-waste em milhões de toneladas (Mt) por país. O Brasil, em destaque, é o 5.º do mundo.</p>
+        <ul class="grafico-barras" aria-describedby="desc-grafico">
+          <li><span class="barra-rotulo">China</span><span class="barra-trilho"><span class="barra" style="--valor:100%">10,1 Mt</span></span></li>
+          <li><span class="barra-rotulo">EUA</span><span class="barra-trilho"><span class="barra" style="--valor:68%">6,9 Mt</span></span></li>
+          <li><span class="barra-rotulo">Índia</span><span class="barra-trilho"><span class="barra" style="--valor:32%">3,2 Mt</span></span></li>
+          <li><span class="barra-rotulo">Japão</span><span class="barra-trilho"><span class="barra" style="--valor:26%">2,6 Mt</span></span></li>
+          <li><span class="barra-rotulo">Brasil</span><span class="barra-trilho"><span class="barra barra-destaque" style="--valor:21%">2,1 Mt</span></span></li>
+          <li><span class="barra-rotulo">Rússia</span><span class="barra-trilho"><span class="barra" style="--valor:16%">1,6 Mt</span></span></li>
+          <li><span class="barra-rotulo">Indonésia</span><span class="barra-trilho"><span class="barra" style="--valor:16%">1,6 Mt</span></span></li>
+          <li><span class="barra-rotulo">Alemanha</span><span class="barra-trilho"><span class="barra" style="--valor:16%">1,6 Mt</span></span></li>
+        </ul>
+        <p class="texto-fonte">Fonte: Global E-waste Monitor 2020 (dados de 2019) – UNU/UNITAR, ITU e ISWA.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-ods-metas" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-ods-metas">ODS e metas alcançadas</h2>
+        <div class="tabela-wrapper">
+          <table>
+            <caption>Metas do projeto ligadas aos Objetivos de Desenvolvimento Sustentável</caption>
+            <thead><tr><th scope="col">ODS</th><th scope="col">Meta</th><th scope="col">Situação</th></tr></thead>
+            <tbody>
+              <tr><td>ODS 12 – Consumo responsável</td><td>Mapear 400 pontos de coleta</td><td>✔ Alcançada (480)</td></tr>
+              <tr><td>ODS 12 – Consumo responsável</td><td>Destinar 1.000 kg de eletrônicos</td><td>✔ Alcançada (1.200 kg)</td></tr>
+              <tr><td>ODS 10 – Redução das desigualdades</td><td>Doar 100 equipamentos recondicionados</td><td>✔ Alcançada (120)</td></tr>
+              <tr><td>ODS 13 – Ação climática</td><td>Realizar 20 oficinas educativas</td><td>⏳ Planejada para 2027</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ECOBOT -->
+  <div class="ecobot-container" aria-live="polite">
+    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
+      🤖 EcoBot
+    </button>
+    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
+      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
+      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ecobot-input-area">
+        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ecobot-enviar" class="btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>EcoConecta</h3>
+        <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
+      </div>
+      <div>
+        <h3>Páginas</h3>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="impacto.html">Dados de Impacto</a>
+        <a href="noticias.html">Notícias</a>
+      </div>
+      <div>
+        <h3>Acesso Rápido</h3>
+        <a href="acessibilidade.html">Acessibilidade</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="midia.html">Mídia</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div>
+        <h3>Equipe</h3>
+        <p style="font-size:.9rem;opacity:.85;">Joaquim Martins · Gabriel Cabrera · Guilherme Reis · Gabriel Franco</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
