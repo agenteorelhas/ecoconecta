@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notícias e artigos sobre legislação, tecnologia, educação e impacto do lixo eletrônico.">
+  <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
+  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
+  <title>EcoConecta | Notícias</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ecobot.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span class="logo-text">EcoConecta</span>
+      </a>
+      <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <nav id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Hospedagem</a></li>
+        </ul>
+      </nav>
+      <button id="btn-contraste" class="btn btn-secundario" aria-pressed="false" style="margin-left:.5rem;font-size:.85rem;padding:.4rem .9rem;">◑ Alto Contraste</button>
+    </div>
+  </header>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+  <div class="page-header">
+    <h1>Notícias</h1>
+    <p>Acompanhe as novidades sobre lixo eletrônico e os projetos da EcoConecta.</p>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+    <section aria-labelledby="sec-noticias">
+      <div class="container">
+        <h2 id="sec-noticias">Últimas notícias</h2>
+        <div class="filtro-noticias" role="group" aria-label="Filtrar notícias por categoria">
+          <button type="button" data-cat="todos" class="ativo" aria-pressed="true">Todas</button>
+          <button type="button" data-cat="legislacao" aria-pressed="false">Legislação</button>
+          <button type="button" data-cat="tecnologia" aria-pressed="false">Tecnologia</button>
+          <button type="button" data-cat="educacao" aria-pressed="false">Educação</button>
+          <button type="button" data-cat="impacto" aria-pressed="false">Impacto</button>
+        </div>
+        <article class="noticia" data-categoria="legislacao">
+          <span class="badge">Legislação</span>
+          <h3>Decreto reforça logística reversa de eletroeletrônicos</h3>
+          <time datetime="2024-02-13">13 de fevereiro de 2024</time>
+          <p>Fabricantes, importadores e comerciantes precisam ampliar a rede de pontos de recebimento, conforme a Política Nacional de Resíduos Sólidos (Lei 12.305/2010) e o Decreto 10.240/2020.</p>
+        </article>
+        <article class="noticia" data-categoria="impacto">
+          <span class="badge">Impacto</span>
+          <h3>Mundo gerou 62 milhões de toneladas de lixo eletrônico</h3>
+          <time datetime="2024-03-20">20 de março de 2024</time>
+          <p>O Global E-waste Monitor 2024 aponta que apenas 22,3% do lixo eletrônico gerado em 2022 foi coletado e reciclado de forma documentada.</p>
+        </article>
+        <article class="noticia" data-categoria="tecnologia">
+          <span class="badge">Tecnologia</span>
+          <h3>EcoRota Digital ganha versão acessível para leitores de tela</h3>
+          <time datetime="2024-05-08">8 de maio de 2024</time>
+          <p>O mapa colaborativo agora oferece uma lista textual dos pontos de coleta, com filtros por bairro e tipo de resíduo, facilitando o uso por pessoas cegas.</p>
+        </article>
+        <article class="noticia" data-categoria="educacao">
+          <span class="badge">Educação</span>
+          <h3>Escolas da Zona Leste recebem computadores recondicionados</h3>
+          <time datetime="2024-08-15">15 de agosto de 2024</time>
+          <p>O programa EcoRecondicionado entregou 120 equipamentos a oito escolas públicas, acompanhados de uma aula sobre o ciclo de vida dos eletrônicos.</p>
+        </article>
+        <article class="noticia" data-categoria="tecnologia">
+          <span class="badge">Tecnologia</span>
+          <h3>Mineração urbana: placas de circuito valem mais que minério</h3>
+          <time datetime="2024-10-02">2 de outubro de 2024</time>
+          <p>Uma tonelada de placas de celular pode conter mais ouro do que uma tonelada de minério bruto. A reciclagem formal reduz a pressão sobre a mineração.</p>
+        </article>
+        <article class="noticia" data-categoria="educacao">
+          <span class="badge">Educação</span>
+          <h3>EcoEduca prepara oficinas com Libras e audiodescrição</h3>
+          <time datetime="2024-11-25">25 de novembro de 2024</time>
+          <p>As oficinas previstas para 2027 terão material inclusivo, produzido com apoio de intérpretes e de pessoas com deficiência visual.</p>
+        </article>
+        <p class="texto-fonte">Notícias resumidas para fins educacionais. Dados mundiais: Global E-waste Monitor 2024; legislação: Planalto.gov.br. Notícias sobre os projetos EcoConecta são fictícias.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ECOBOT -->
+  <div class="ecobot-container" aria-live="polite">
+    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
+      🤖 EcoBot
+    </button>
+    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
+      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
+      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ecobot-input-area">
+        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ecobot-enviar" class="btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>EcoConecta</h3>
+        <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
+      </div>
+      <div>
+        <h3>Páginas</h3>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="impacto.html">Dados de Impacto</a>
+        <a href="noticias.html">Notícias</a>
+      </div>
+      <div>
+        <h3>Acesso Rápido</h3>
+        <a href="acessibilidade.html">Acessibilidade</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="midia.html">Mídia</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div>
+        <h3>Equipe</h3>
+        <p style="font-size:.9rem;opacity:.85;">Joaquim Martins · Gabriel Cabrera · Guilherme Reis · Gabriel Franco</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

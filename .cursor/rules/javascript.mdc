@@ -1,0 +1,38 @@
+---
+description: Padrões de JavaScript puro do EcoConecta
+globs: "**/*.js"
+alwaysApply: false
+---
+# JavaScript
+
+## Objetivo
+Manter o `js/main.js` simples, comentado e explicável por qualquer integrante.
+
+## Contexto
+JS puro (ES6+), sem bibliotecas. Cada funcionalidade é um módulo IIFE que sai cedo se o elemento não existe na página.
+
+## Regras
+- `'use strict'`; um módulo IIFE por funcionalidade, com comentário de seção.
+- Buscar elementos por `id`/classe e retornar se não existirem.
+- Formulário: `preventDefault`, mensagem em `#erro-<campo>`, classes `erro`/`ok` e `aria-invalid`.
+- `localStorage` com prefixo `ecoconecta_`.
+- Atualizar atributos ARIA (`aria-expanded`, `aria-pressed`) junto com o estado visual.
+- Usar `textContent` para texto do usuário, nunca `innerHTML`.
+
+## Exemplo
+Trecho real de `js/main.js`:
+```js
+btn.addEventListener('click', () => {
+  const ativo = document.body.classList.toggle('alto-contraste');
+  btn.setAttribute('aria-pressed', ativo);
+  localStorage.setItem('ecoconecta_contraste', ativo ? 'alto' : 'normal');
+});
+```
+
+## Erros a evitar
+- Importar biblioteca ou script de CDN.
+- Inserir texto digitado pelo usuário com `innerHTML`.
+- Ordem de gatilhos do EcoBot com termo genérico antes do específico.
+
+## Quando perguntar
+Antes de criar novo arquivo `.js` ou nova chave de `localStorage`.

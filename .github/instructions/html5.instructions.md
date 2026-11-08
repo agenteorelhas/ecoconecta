@@ -1,0 +1,37 @@
+---
+description: Padrões de HTML5 semântico para as páginas do EcoConecta
+applyTo: "**/*.html"
+---
+# HTML5
+
+## Objetivo
+Garantir páginas semânticas, válidas no W3C (0 erros) e consistentes entre si.
+
+## Contexto
+São 10 páginas estáticas que compartilham header, nav, footer e EcoBot.
+
+## Regras
+- Estrutura: `header` > `nav`, `main#conteudo-principal` > `section[aria-labelledby]`, `footer`.
+- Um único `h1` por página; não pular níveis (o título do EcoBot é `h2`).
+- Sem `role` redundante (`header`/`footer` já são banner/contentinfo).
+- Imagens com `alt`, `width` e `height`; mídia com `controls` e texto alternativo.
+- Tabelas com `caption` e `th scope="col"`.
+- Iframes com `title` e `loading="lazy"`; nunca `frameborder`.
+- Links de CSS: `css/style.css` e `css/ecobot.css`; script: `js/main.js` antes de `</body>`.
+
+## Exemplo
+Trecho real de `noticias.html`:
+```html
+<article class="noticia" data-categoria="legislacao">
+  <span class="badge">Legislação</span>
+  <h3>Decreto reforça logística reversa de eletroeletrônicos</h3>
+  <time datetime="2024-02-13">13 de fevereiro de 2024</time>
+```
+
+## Erros a evitar
+- `div` no lugar de `section`/`article` quando há conteúdo com título.
+- Atributos obsoletos ou estilos inline extensos.
+- Esquecer de mover o `aria-current="page"` ao copiar o menu.
+
+## Quando perguntar
+Antes de criar novo componente que não exista em nenhuma página.

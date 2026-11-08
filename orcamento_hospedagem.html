@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Relatório comparativo de hospedagem e domínio do site EcoConecta, com justificativa da escolha.">
+  <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
+  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
+  <title>EcoConecta | Hospedagem e Domínio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ecobot.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+        <span class="logo-icon" aria-hidden="true">🌿</span>
+        <span class="logo-text">EcoConecta</span>
+      </a>
+      <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <nav id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html" aria-current="page">Hospedagem</a></li>
+        </ul>
+      </nav>
+      <button id="btn-contraste" class="btn btn-secundario" aria-pressed="false" style="margin-left:.5rem;font-size:.85rem;padding:.4rem .9rem;">◑ Alto Contraste</button>
+    </div>
+  </header>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+  <div class="page-header">
+    <h1>Orçamento de Hospedagem e Domínio</h1>
+    <p>Comparativo de 3 hospedagens e 3 domínios, com a justificativa da nossa escolha.</p>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+    <section aria-labelledby="sec-intro">
+      <div class="container">
+        <h2 id="sec-intro">Por que comparar hospedagens?</h2>
+        <p>O EcoConecta é um site estático (HTML, CSS e JavaScript, sem banco de dados). Por isso, precisamos de uma hospedagem com <strong>HTTPS</strong>, publicação simples a partir do <strong>GitHub</strong>, baixo custo e, se possível, compromisso ambiental. Comparamos três serviços e três opções de domínio.</p>
+        <p class="texto-fonte">Preços consultados em novembro de 2026 nos sites oficiais; valores em dólar convertidos a aproximadamente R$ 5,50. Podem variar.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-hosp" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-hosp">Comparativo de hospedagens</h2>
+        <div class="tabela-wrapper">
+          <table>
+            <caption>Hospedagens para sites estáticos</caption>
+            <thead><tr><th scope="col">Serviço</th><th scope="col">Plano</th><th scope="col">Preço/mês</th><th scope="col">HTTPS</th><th scope="col">Domínio próprio</th><th scope="col">Limite de banda</th><th scope="col">Suporte</th></tr></thead>
+            <tbody>
+              <tr><td>GitHub Pages</td><td>Gratuito</td><td>R$ 0,00</td><td>Sim, automático</td><td>Sim</td><td>100 GB/mês (limite flexível)</td><td>Comunidade e documentação</td></tr>
+              <tr><td>Netlify</td><td>Free / Pro</td><td>R$ 0,00 / ≈ R$ 105 (US$ 19 por membro)</td><td>Sim, automático</td><td>Sim</td><td>100 GB (Free) / 1 TB (Pro)</td><td>Fórum (Free) / e-mail (Pro)</td></tr>
+              <tr><td>Vercel</td><td>Hobby / Pro</td><td>R$ 0,00 / ≈ R$ 110 (US$ 20 por membro)</td><td>Sim, automático</td><td>Sim</td><td>100 GB (Hobby) / 1 TB (Pro)</td><td>Comunidade (Hobby) / e-mail (Pro)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-dom">
+      <div class="container">
+        <h2 id="sec-dom">Comparativo de domínios</h2>
+        <div class="tabela-wrapper">
+          <table>
+            <caption>Opções de domínio para o EcoConecta</caption>
+            <thead><tr><th scope="col">Domínio</th><th scope="col">Registrador</th><th scope="col">Preço/ano</th><th scope="col">DNS</th><th scope="col">Inclui privacidade</th></tr></thead>
+            <tbody>
+              <tr><td>ecoconecta.com.br</td><td>Registro.br</td><td>R$ 40,00</td><td>Gratuito (Registro.br)</td><td>Parcial (dados de CPF/CNPJ não expostos publicamente)</td></tr>
+              <tr><td>ecoconecta.eco.br</td><td>Registro.br</td><td>R$ 40,00</td><td>Gratuito (Registro.br)</td><td>Parcial (mesma política do .br)</td></tr>
+              <tr><td>ecoconecta.org</td><td>Cloudflare Registrar</td><td>≈ R$ 60,00 (US$ 10,9)</td><td>Gratuito (Cloudflare)</td><td>Sim (WHOIS privado incluso)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-escolha" class="fundo-suave">
+      <div class="container">
+        <h2 id="sec-escolha">Nossa escolha: GitHub Pages + ecoconecta.eco.br</h2>
+        <div class="destaque">
+          <ul class="lista-check">
+            <li><strong>Gratuito:</strong> custo zero de hospedagem, ideal para uma ONG estudantil.</li>
+            <li><strong>HTTPS automático:</strong> certificado gerado e renovado sem configuração manual.</li>
+            <li><strong>Integração com o repositório:</strong> cada <em>merge</em> na branch <code>main</code> publica a nova versão, mantendo o histórico de commits.</li>
+            <li><strong>Suficiente para o projeto:</strong> site estático leve, muito abaixo do limite de banda.</li>
+            <li><strong>Domínio .eco.br:</strong> categoria do Registro.br voltada a iniciativas ambientais, reforçando a identidade do projeto por R$ 40,00/ano.</li>
+          </ul>
+          <p><strong>Custo total estimado no 1.º ano:</strong> R$ 40,00 (apenas o domínio). Sem domínio próprio, o site funciona gratuitamente no endereço <code>github.io</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sec-verde">
+      <div class="container">
+        <h2 id="sec-verde">Sustentabilidade da hospedagem</h2>
+        <p>Um site também consome energia. Para reduzir a pegada de carbono do EcoConecta:</p>
+        <ul class="lista-check">
+          <li><strong>Green hosting:</strong> preferimos provedores com metas públicas de energia renovável. A Microsoft (dona do GitHub) tem compromisso de ser carbono negativo até 2030.</li>
+          <li><strong>Site estático e leve:</strong> sem frameworks nem bibliotecas externas, o que reduz dados transferidos e processamento.</li>
+          <li><strong>Imagens otimizadas</strong> e carregamento sob demanda (<code>loading="lazy"</code>).</li>
+          <li><strong>Compensação de carbono:</strong> a equipe planeja medir a pegada no Website Carbon Calculator e compensar as emissões com o plantio de árvores em parceria com ONGs locais.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ECOBOT -->
+  <div class="ecobot-container" aria-live="polite">
+    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
+      🤖 EcoBot
+    </button>
+    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
+      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
+      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ecobot-input-area">
+        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ecobot-enviar" class="btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>EcoConecta</h3>
+        <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
+      </div>
+      <div>
+        <h3>Páginas</h3>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="impacto.html">Dados de Impacto</a>
+        <a href="noticias.html">Notícias</a>
+      </div>
+      <div>
+        <h3>Acesso Rápido</h3>
+        <a href="acessibilidade.html">Acessibilidade</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="midia.html">Mídia</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div>
+        <h3>Equipe</h3>
+        <p style="font-size:.9rem;opacity:.85;">Joaquim Martins · Gabriel Cabrera · Guilherme Reis · Gabriel Franco</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

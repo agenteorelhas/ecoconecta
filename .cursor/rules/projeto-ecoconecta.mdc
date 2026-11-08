@@ -1,0 +1,35 @@
+---
+description: Visão do projeto EcoConecta: tema, stack, páginas e o que não inventar
+globs:
+alwaysApply: true
+---
+# Projeto EcoConecta
+
+## Objetivo
+Manter qualquer código ou texto gerado dentro do escopo do site EcoConecta. O plano completo está em `docs/README.md` e `docs/escopo.md`; esta regra não o repete.
+
+## Contexto
+Site acadêmico (UNICID, DEV. Front-End, 2026) de uma ONG fictícia que combate o descarte incorreto de lixo eletrônico. Solução: EcoRota Digital (mapa colaborativo de pontos de coleta). ODS 12, 13 e 10. Público prioritário: pessoas com deficiência.
+
+## Regras
+- Stack: HTML5 + CSS3 + JavaScript puro. Sem frameworks, sem CDN, sem bibliotecas.
+- Idioma de todo conteúdo e comentário: pt-BR. `lang="pt-BR"` em todas as páginas.
+- Páginas permitidas (exatamente 10): `index.html`, `sobre.html`, `projetos.html`, `impacto.html`, `acessibilidade.html`, `galeria.html`, `midia.html`, `noticias.html`, `contato.html`, `orcamento_hospedagem.html`.
+- Estilos só em `css/style.css` e `css/ecobot.css`; scripts só em `js/main.js`.
+- Header, nav, footer e EcoBot são idênticos em todas as páginas; muda só o `aria-current="page"`.
+- Todo dado numérico precisa de fonte citada (ex.: Global E-waste Monitor) ou ser marcado como fictício.
+
+## Exemplo
+Trecho real de `impacto.html`:
+```html
+<span class="contador-numero" data-contador="2.1" data-decimais="1">0</span>
+<p class="texto-fonte">Fontes: Global E-waste Monitor 2020 (dado do Brasil) ...</p>
+```
+
+## Erros a evitar
+- Criar página, pasta ou dependência fora da lista acima.
+- Inventar estatística sem fonte ou apresentar dado fictício como real.
+- Colar chave de API, token ou dado pessoal além de nome, RGM e usuário do GitHub da equipe.
+
+## Quando perguntar
+Antes de adicionar página, biblioteca, serviço externo ou mudar o tema; ou se faltar fonte para um dado.

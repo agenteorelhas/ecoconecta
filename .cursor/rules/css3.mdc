@@ -1,0 +1,38 @@
+---
+description: Padrões de CSS3 responsivo e identidade visual do EcoConecta
+globs: "**/*.css"
+alwaysApply: false
+---
+# CSS3
+
+## Objetivo
+Manter a identidade visual única, responsiva e compatível com o modo alto contraste.
+
+## Contexto
+Estilos em `css/style.css` (geral) e `css/ecobot.css` (assistente). Sem frameworks.
+
+## Regras
+- Use as variáveis de `:root` (`--verde-escuro`, `--amarelo`...). Não repita cores soltas.
+- Layout com Grid (`.grid-cards`) e Flexbox; breakpoints em 768 px e 480 px.
+- Todo elemento interativo precisa de foco visível (`outline` amarelo).
+- Ao criar componente, adicione o ajuste correspondente em `body.alto-contraste`.
+- Texto com contraste mínimo de 4,5:1.
+- Respeite `prefers-reduced-motion`.
+
+## Exemplo
+Trecho real de `css/style.css`:
+```css
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+```
+
+## Erros a evitar
+- Usar `var(--branco)` como cor de texto sem ajuste no alto contraste (vira preto no preto).
+- `outline: none` sem substituto visível.
+- Larguras fixas que causem rolagem horizontal em 375 px.
+
+## Quando perguntar
+Antes de mudar a paleta, a tipografia ou os breakpoints.
