@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Vídeos, podcast e mapa sobre lixo eletrônico e pontos de coleta em São Paulo.">
   <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
-  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
-  <title>EcoConecta | Mídia</title>
+  <meta name="author" content="Equipe Recircuito – UNICID Front-End">
+  <title>Recircuito | Mídia</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/ecobot.css">
+  <link rel="stylesheet" href="css/ciclobot.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
@@ -16,9 +16,9 @@
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+      <a class="logo" href="index.html" aria-label="Recircuito – Página Inicial">
         <span class="logo-icon" aria-hidden="true">🌿</span>
-        <span class="logo-text">EcoConecta</span>
+        <span class="logo-text">Recircuito</span>
       </a>
       <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
       <nav id="nav-principal" aria-label="Navegação principal">
@@ -51,19 +51,19 @@
       <div class="container">
         <h2 id="sec-video">Vídeo institucional</h2>
         <div class="midia-wrapper">
-          <h3>EcoConecta em 3 segundos (arquivo local)</h3>
-          <video controls preload="metadata" width="800" height="450" poster="https://placehold.co/800x450/1b5e20/ffffff.png?text=Video+EcoConecta" aria-describedby="desc-video">
+          <h3>Recircuito em 3 segundos (arquivo local)</h3>
+          <video controls preload="metadata" width="800" height="450" poster="https://placehold.co/800x450/1b5e20/ffffff.png?text=Video+Recircuito" aria-describedby="desc-video">
             <source src="assets/ewaste-video.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
-          <p id="desc-video" class="texto-fonte">Vídeo sobre lixo eletrônico (arquivo local). Descrição: tela verde com o nome EcoConecta. Sem fala, por isso não possui legendas.</p>
+          <p id="desc-video" class="texto-fonte">Vídeo sobre lixo eletrônico (arquivo local). Descrição: tela verde com o nome Recircuito. Sem fala, por isso não possui legendas.</p>
         </div>
       </div>
     </section>
 
     <section aria-labelledby="sec-audio" class="fundo-suave">
       <div class="container">
-        <h2 id="sec-audio">Podcast EcoConecta</h2>
+        <h2 id="sec-audio">Podcast Recircuito</h2>
         <div class="midia-wrapper">
           <h3>Episódio 1 – Para onde vai o seu celular velho?</h3>
           <audio controls preload="metadata">
@@ -72,7 +72,7 @@
           </audio>
           <details>
             <summary>Transcrição do episódio</summary>
-            <p>Arquivo demonstrativo do projeto acadêmico. Transcrição: "Olá! Este é o podcast EcoConecta. Hoje vamos falar sobre o destino dos celulares antigos e onde descartá-los corretamente."</p>
+            <p>Arquivo demonstrativo do projeto acadêmico. Transcrição: "Olá! Este é o podcast Recircuito. Hoje vamos falar sobre o destino dos celulares antigos e onde descartá-los corretamente."</p>
           </details>
         </div>
       </div>
@@ -100,18 +100,18 @@
     </section>
   </main>
 
-  <!-- ECOBOT -->
-  <div class="ecobot-container" aria-live="polite">
-    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
-      🤖 EcoBot
+  <!-- CICLOBOT -->
+  <div class="ciclobot-container" aria-live="polite">
+    <button id="ciclobot-toggle" class="ciclobot-btn" aria-expanded="false" aria-controls="ciclobot-painel" title="Abrir assistente CicloBot">
+      🤖 CicloBot
     </button>
-    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
-      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
-      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
-      <div class="ecobot-input-area">
-        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
-        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
-        <button id="ecobot-enviar" class="btn">Enviar</button>
+    <div id="ciclobot-painel" class="ciclobot-painel" hidden role="dialog" aria-label="Assistente CicloBot">
+      <h2 class="ciclobot-titulo">🌿 CicloBot – Tire suas dúvidas!</h2>
+      <div id="ciclobot-chat" class="ciclobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ciclobot-input-area">
+        <label for="ciclobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ciclobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ciclobot-enviar" class="btn">Enviar</button>
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@
   <footer>
     <div class="footer-grid">
       <div>
-        <h3>EcoConecta</h3>
+        <h3>Recircuito</h3>
         <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
       </div>
       <div>
@@ -143,7 +143,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+      <p>© 2026 Recircuito – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
     </div>
   </footer>
 

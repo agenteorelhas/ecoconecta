@@ -1,11 +1,11 @@
 ---
-description: Visão do projeto EcoConecta: tema, stack, páginas e o que não inventar
+description: Visão do projeto Recircuito: tema, stack, páginas e o que não inventar
 applyTo: "**"
 ---
-# Projeto EcoConecta
+# Projeto Recircuito
 
 ## Objetivo
-Manter qualquer código ou texto gerado dentro do escopo do site EcoConecta. O plano completo está em `docs/README.md` e `docs/escopo.md`; esta regra não o repete.
+Manter qualquer código ou texto gerado dentro do escopo do site Recircuito. O plano completo está em `docs/README.md` e `docs/escopo.md`; esta regra não o repete.
 
 ## Contexto
 Site acadêmico (UNICID, DEV. Front-End, 2026) de uma ONG fictícia que combate o descarte incorreto de lixo eletrônico. Solução: EcoRota Digital (mapa colaborativo de pontos de coleta). ODS 12, 13 e 10. Público prioritário: pessoas com deficiência.
@@ -14,8 +14,8 @@ Site acadêmico (UNICID, DEV. Front-End, 2026) de uma ONG fictícia que combate 
 - Stack: HTML5 + CSS3 + JavaScript puro. Sem frameworks, sem CDN, sem bibliotecas.
 - Idioma de todo conteúdo e comentário: pt-BR. `lang="pt-BR"` em todas as páginas.
 - Páginas permitidas (exatamente 10): `index.html`, `sobre.html`, `projetos.html`, `impacto.html`, `acessibilidade.html`, `galeria.html`, `midia.html`, `noticias.html`, `contato.html`, `orcamento_hospedagem.html`.
-- Estilos só em `css/style.css` e `css/ecobot.css`; scripts só em `js/main.js`.
-- Header, nav, footer e EcoBot são idênticos em todas as páginas; muda só o `aria-current="page"`.
+- Estilos só em `css/style.css` e `css/ciclobot.css`; scripts só em `js/main.js`.
+- Header, nav, footer e CicloBot são idênticos em todas as páginas; muda só o `aria-current="page"`.
 - Todo dado numérico precisa de fonte citada (ex.: Global E-waste Monitor) ou ser marcado como fictício.
 
 ## Exemplo

@@ -1,5 +1,5 @@
 ---
-description: Padrões de CSS3 responsivo e identidade visual do EcoConecta
+description: Padrões de CSS3 responsivo e identidade visual do Recircuito
 globs: "**/*.css"
 alwaysApply: false
 ---
@@ -9,7 +9,7 @@ alwaysApply: false
 Manter a identidade visual única, responsiva e compatível com o modo alto contraste.
 
 ## Contexto
-Estilos em `css/style.css` (geral) e `css/ecobot.css` (assistente). Sem frameworks.
+Estilos em `css/style.css` (geral) e `css/ciclobot.css` (assistente). Sem frameworks.
 
 ## Regras
 - Use as variáveis de `:root` (`--verde-escuro`, `--amarelo`...). Não repita cores soltas.

@@ -2,8 +2,8 @@ UNICID - Curso Superior de Informática
 Disciplina: DEV. Front-End - Prof. Paulo Fratta
 Atividade: AV A1 - Projeto de Site Concluído (2.ª entrega) - 2.º semestre de 2026
 
-Equipe: EcoConecta
-Projeto: EcoConecta - Site de conscientização sobre o descarte correto de lixo eletrônico
+Equipe: Recircuito
+Projeto: Recircuito - Site de conscientização sobre o descarte correto de lixo eletrônico
 
 Integrantes (nome completo - RGM - usuário do GitHub):
 1. Joaquim Martins Ferreira Neto - RGM 47609630 - netosec
@@ -14,8 +14,8 @@ Integrantes (nome completo - RGM - usuário do GitHub):
 Descrição da atividade:
 Site de uma ONG fictícia com 10 páginas HTML5 interligadas, CSS3 responsivo e
 JavaScript puro (validação de formulário, localStorage, menu mobile, alto contraste,
-filtro de notícias, galeria com lightbox e assistente EcoBot). O tema é o lixo
+filtro de notícias, galeria com lightbox e assistente CicloBot). O tema é o lixo
 eletrônico (ODS 12, 13 e 10), com foco em acessibilidade para pessoas com deficiência.
 
-Repositório GitHub: https://github.com/agenteorelhas/ecoconecta
-URL do site publicado: https://agenteorelhas.github.io/ecoconecta/ (após ativar o GitHub Pages)
+Repositório GitHub: https://github.com/agenteorelhas/recircuito
+URL do site publicado: https://agenteorelhas.github.io/recircuito/ (após ativar o GitHub Pages)

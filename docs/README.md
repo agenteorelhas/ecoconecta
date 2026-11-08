@@ -1,11 +1,11 @@
-# EcoConecta — Site de Conscientização sobre Lixo Eletrônico
+# Recircuito — Site de Conscientização sobre Lixo Eletrônico
 
 Projeto acadêmico da disciplina **DEV. Front-End** — Curso Superior de Informática, **UNICID** (2.º semestre de 2026).
 
 | Item | Link |
 |---|---|
-| Site publicado | `https://agenteorelhas.github.io/ecoconecta/` *(endereço previsto — passa a responder depois que o GitHub Pages for ativado na branch `main`)* |
-| Repositório GitHub | https://github.com/agenteorelhas/ecoconecta |
+| Site publicado | `https://agenteorelhas.github.io/recircuito/` *(endereço previsto — passa a responder depois que o GitHub Pages for ativado na branch `main`)* |
+| Repositório GitHub | https://github.com/agenteorelhas/recircuito |
 
 ## Equipe
 
@@ -18,7 +18,7 @@ Projeto acadêmico da disciplina **DEV. Front-End** — Curso Superior de Inform
 
 ## Como rodar
 
-1. Clone o repositório: `git clone https://github.com/agenteorelhas/ecoconecta.git`
+1. Clone o repositório: `git clone https://github.com/agenteorelhas/recircuito.git`
 2. Abra o arquivo `index.html` no navegador (duplo clique).
 3. Ou, no VS Code, instale a extensão **Live Server**, clique com o botão direito em `index.html` e escolha **Open with Live Server**.
 
@@ -63,16 +63,16 @@ A solução proposta é a **EcoRota Digital**: mapa colaborativo de pontos de co
 - Alto contraste com preferência salva em `localStorage`.
 - Validação do formulário com `preventDefault`, mensagens de erro e borda em destaque; rascunho salvo em `localStorage`.
 - Filtro de notícias por categoria.
-- EcoBot: assistente de perguntas frequentes.
+- CicloBot: assistente de perguntas frequentes.
 - Contadores animados (`IntersectionObserver`) e lightbox da galeria.
 
 ## Divisão de funções
 
 | Integrante | Responsabilidades |
 |---|---|
-| Joaquim | `js/main.js` (validação, localStorage, filtro, EcoBot, lightbox), revisão de PRs |
+| Joaquim | `js/main.js` (validação, localStorage, filtro, CicloBot, lightbox), revisão de PRs |
 | Gabriel Cabrera | Estrutura HTML5 das páginas, ARIA, `acessibilidade.html`, testes com teclado e NVDA |
-| Guilherme | `css/style.css`, `css/ecobot.css`, responsividade, alto contraste, deploy no GitHub Pages, orçamento |
+| Guilherme | `css/style.css`, `css/ciclobot.css`, responsividade, alto contraste, deploy no GitHub Pages, orçamento |
 | Gabriel Franco | Textos e fontes, `noticias.html`, `impacto.html`, documentação em `/docs` e evidências de testes |
 
 ## Documentação

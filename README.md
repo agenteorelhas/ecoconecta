@@ -1,4 +1,4 @@
-# EcoConecta
+# Recircuito
 
 Site de conscientização sobre o descarte correto de lixo eletrônico — UNICID, DEV. Front-End 2026.
 

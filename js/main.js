@@ -1,5 +1,5 @@
 /**
- * EcoConecta – JavaScript Principal
+ * Recircuito – JavaScript Principal
  * Sem frameworks/bibliotecas externas — JS puro (ES6+)
  */
 
@@ -38,7 +38,7 @@
   if (!btn) return;
 
   // Restaura preferência salva
-  if (localStorage.getItem('ecoconecta_contraste') === 'alto') {
+  if (localStorage.getItem('recircuito_contraste') === 'alto') {
     document.body.classList.add('alto-contraste');
     btn.setAttribute('aria-pressed', 'true');
     btn.textContent = '☀ Contraste Normal';
@@ -48,7 +48,7 @@
     const ativo = document.body.classList.toggle('alto-contraste');
     btn.setAttribute('aria-pressed', ativo);
     btn.textContent = ativo ? '☀ Contraste Normal' : '◑ Alto Contraste';
-    localStorage.setItem('ecoconecta_contraste', ativo ? 'alto' : 'normal');
+    localStorage.setItem('recircuito_contraste', ativo ? 'alto' : 'normal');
   });
 })();
 
@@ -76,7 +76,7 @@
   // Restaura rascunho do localStorage
   Object.entries(campos).forEach(([key, cfg]) => {
     if (!cfg.el) return;
-    const val = localStorage.getItem('ecoconecta_form_' + key);
+    const val = localStorage.getItem('recircuito_form_' + key);
     if (val) cfg.el.value = val;
   });
 
@@ -84,7 +84,7 @@
   Object.entries(campos).forEach(([key, cfg]) => {
     if (!cfg.el) return;
     cfg.el.addEventListener('input', () => {
-      localStorage.setItem('ecoconecta_form_' + key, cfg.el.value);
+      localStorage.setItem('recircuito_form_' + key, cfg.el.value);
     });
   });
 
@@ -128,7 +128,7 @@
     }
 
     // Limpa localStorage após envio
-    Object.keys(campos).forEach(key => localStorage.removeItem('ecoconecta_form_' + key));
+    Object.keys(campos).forEach(key => localStorage.removeItem('recircuito_form_' + key));
 
     // Exibe mensagem de sucesso
     const sucesso = document.getElementById('form-sucesso');
@@ -166,14 +166,14 @@
 })();
 
 /* ============================================================
-   5. ECOBOT – FAQ simples (assistente no site)
+   5. CICLOBOT – FAQ simples (assistente no site)
    ============================================================ */
-(function ecobot() {
-  const btn        = document.getElementById('ecobot-toggle');
-  const painel     = document.getElementById('ecobot-painel');
-  const inputEl    = document.getElementById('ecobot-input');
-  const enviarBtn  = document.getElementById('ecobot-enviar');
-  const chatEl     = document.getElementById('ecobot-chat');
+(function ciclobot() {
+  const btn        = document.getElementById('ciclobot-toggle');
+  const painel     = document.getElementById('ciclobot-painel');
+  const inputEl    = document.getElementById('ciclobot-input');
+  const enviarBtn  = document.getElementById('ciclobot-enviar');
+  const chatEl     = document.getElementById('ciclobot-chat');
   if (!btn || !painel) return;
 
   const respostas = [
@@ -184,7 +184,7 @@
     { gatilhos: ['ponto de coleta','onde descartar','onde levar'],
       resp: '📍 Você pode usar o mapa da página Mídia ou buscar "ecopontos" na sua cidade na Secretaria do Meio Ambiente.' },
     { gatilhos: ['ods','objetivo'],
-      resp: '🌍 O EcoConecta se alinha aos ODS 12 (Consumo Responsável) e ODS 13 (Ação Climática) da ONU.' },
+      resp: '🌍 O Recircuito se alinha aos ODS 12 (Consumo Responsável) e ODS 13 (Ação Climática) da ONU.' },
     { gatilhos: ['voluntário','voluntariar','ajudar'],
       resp: '🤝 Ficamos felizes! Preencha o formulário de contato com o assunto "Voluntariado" e entraremos em contato.' },
     { gatilhos: ['doação','doar','apoio'],
@@ -206,7 +206,7 @@
 
     // Adiciona mensagem do usuário
     const msgUser = document.createElement('p');
-    msgUser.className = 'ecobot-user';
+    msgUser.className = 'ciclobot-user';
     msgUser.textContent = '👤 ' + inputEl.value.trim();
     chatEl.appendChild(msgUser);
 
@@ -217,7 +217,7 @@
     }
 
     const msgBot = document.createElement('p');
-    msgBot.className = 'ecobot-bot';
+    msgBot.className = 'ciclobot-bot';
     msgBot.textContent = resp;
     chatEl.appendChild(msgBot);
 

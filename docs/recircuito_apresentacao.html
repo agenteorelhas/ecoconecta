@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EcoConecta — Apresentação AV A1</title>
+<title>Recircuito — Apresentação AV A1</title>
 <style>
   :root {
     --verde-escuro: #1b5e20; --verde-medio: #2e7d32; --verde-claro: #4caf50;
@@ -102,13 +102,13 @@
   <!-- 1. CAPA -->
   <section class="slide escuro capa" aria-label="Slide 1: Capa">
     <div style="font-size:96px;line-height:1" aria-hidden="true">🌿</div>
-    <h1>EcoConecta</h1>
+    <h1>Recircuito</h1>
     <p style="font-size:32px">Plataforma de conscientização sobre lixo eletrônico</p>
     <div>
       <span class="pill">Joaquim Martins</span><span class="pill">Gabriel Cabrera</span><span class="pill">Guilherme Reis</span><span class="pill">Gabriel Franco</span>
     </div>
     <p style="font-size:24px">DEV. Front-End — UNICID — Prof. Paulo Fratta — 2026</p>
-    <span class="url">https://agenteorelhas.github.io/ecoconecta/</span>
+    <span class="url">https://agenteorelhas.github.io/recircuito/</span>
     <p class="pequeno">Apresentações: 09/11 e 16/11/2026</p>
   </section>
 
@@ -129,7 +129,7 @@
   <!-- 3. OBJETIVOS -->
   <section class="slide" aria-label="Slide 3: Objetivos">
     <span class="num-slide">3</span>
-    <h2>O que o EcoConecta quer alcançar</h2>
+    <h2>O que o Recircuito quer alcançar</h2>
     <div class="destaque" style="font-size:24px"><span class="rotulo">Objetivo geral</span>Informar e mobilizar a população para o descarte correto de lixo eletrônico, por meio de um site acessível e educativo.</div>
     <p style="font-weight:700;color:var(--verde-escuro)">Objetivos específicos (do escopo)</p>
     <ul class="limpa" style="font-size:24px">
@@ -162,9 +162,9 @@
     <span class="num-slide">5</span>
     <h2>Estrutura e tecnologias</h2>
     <div class="grid2" style="grid-template-columns:1.15fr 1fr;align-items:start">
-<pre class="codigo">ecoconecta/
+<pre class="codigo">recircuito/
 ├── index.html  <span class="c-com">(+ 9 páginas .html)</span>
-├── css/        style.css · ecobot.css
+├── css/        style.css · ciclobot.css
 ├── js/         main.js <span class="c-com">(puro, sem libs)</span>
 ├── img/ assets/ <span class="c-com">(vídeo, áudio, imagens)</span>
 ├── docs/       README, diário, escopo,
@@ -217,7 +217,7 @@
 <span class="c-var">campo</span>.<span class="c-fn">addEventListener</span>(<span class="c-str">'input'</span>, () <span class="c-kw">=&gt;</span> {
   <span class="c-var">localStorage</span>.<span class="c-fn">setItem</span>(<span class="c-str">'form_'</span> + <span class="c-var">key</span>, <span class="c-var">campo</span>.<span class="c-var">value</span>);
 });</pre>
-    <div><span class="badge">Menu mobile</span><span class="badge">Alto contraste + localStorage</span><span class="badge">Filtro de notícias</span><span class="badge">Contadores animados</span><span class="badge">Lightbox</span><span class="badge">EcoBot FAQ</span></div>
+    <div><span class="badge">Menu mobile</span><span class="badge">Alto contraste + localStorage</span><span class="badge">Filtro de notícias</span><span class="badge">Contadores animados</span><span class="badge">Lightbox</span><span class="badge">CicloBot FAQ</span></div>
   </section>
 
   <!-- 8. ACESSIBILIDADE -->
@@ -255,7 +255,7 @@
     <span class="num-slide">9</span>
     <h2>Versionamento e colaboração</h2>
     <div class="fluxo">
-      <span class="passo">feature/site-ecoconecta</span><span class="seta">→</span>
+      <span class="passo">feature/site-recircuito</span><span class="seta">→</span>
       <span class="passo">commits</span><span class="seta">→</span>
       <span class="passo">Pull Request #1</span><span class="seta">→</span>
       <span class="passo">merge na main</span><span class="seta">→</span>
@@ -266,8 +266,8 @@
       <span class="badge">feat:</span><span class="badge">fix:</span><span class="badge">docs:</span><span class="badge">style:</span>
     </div>
     <div class="grid3">
-      <div class="card"><span class="rotulo">Repositório</span>github.com/agenteorelhas/ecoconecta</div>
-      <div class="card"><span class="rotulo">Branch</span>feature/site-ecoconecta</div>
+      <div class="card"><span class="rotulo">Repositório</span>github.com/agenteorelhas/recircuito</div>
+      <div class="card"><span class="rotulo">Branch</span>feature/site-recircuito</div>
       <div class="card"><span class="rotulo">Pull Request</span>PR #1 aberto</div>
     </div>
     <div class="destaque">👥 Todos os integrantes com commits</div>
@@ -283,7 +283,7 @@
       <tbody>
         <tr><td>"Crie 9 páginas com mesmo header/nav/footer, aria-current..."</td><td>Estrutura das 9 páginas</td><td>Textos adaptados ao tema real</td></tr>
         <tr><td>"Implemente alto contraste com variáveis CSS e localStorage"</td><td>Tema preto/amarelo persistente</td><td>Cores de títulos no modo escuro</td></tr>
-        <tr><td>"Adicione EcoBot com FAQ sobre e-waste"</td><td>Assistente com 7 perguntas</td><td>Respostas com dados reais</td></tr>
+        <tr><td>"Adicione CicloBot com FAQ sobre e-waste"</td><td>Assistente com 7 perguntas</td><td>Respostas com dados reais</td></tr>
       </tbody>
     </table>
     <div class="grid2">
@@ -309,9 +309,9 @@
       <table>
         <thead><tr><th>Domínio</th><th>Registrador</th><th>Preço/ano</th></tr></thead>
         <tbody>
-          <tr class="escolhido"><td>ecoconecta.eco.br</td><td>Registro.br</td><td>R$ 40</td></tr>
-          <tr><td>ecoconecta.com.br</td><td>Registro.br</td><td>R$ 40</td></tr>
-          <tr><td>ecoconecta.org</td><td>Cloudflare Registrar</td><td>≈ R$ 60</td></tr>
+          <tr class="escolhido"><td>recircuito.eco.br</td><td>Registro.br</td><td>R$ 40</td></tr>
+          <tr><td>recircuito.com.br</td><td>Registro.br</td><td>R$ 40</td></tr>
+          <tr><td>recircuito.org</td><td>Cloudflare Registrar</td><td>≈ R$ 60</td></tr>
         </tbody>
       </table>
       <div class="card" style="text-align:center"><span class="rotulo">Total do 1.º ano</span><div class="numero">R$ 40</div><span class="pequeno">R$ 40 (domínio) + R$ 0 (hospedagem)</span></div>
@@ -333,7 +333,7 @@
         <tr><td>Vídeo, áudio e iframe</td><td>3 elementos multimídia</td><td>✅</td></tr>
         <tr><td>GitHub com branch + PR</td><td>Branch + PR #1 aberto</td><td>✅</td></tr>
         <tr><td>/docs completa</td><td>7 documentos Markdown</td><td>✅</td></tr>
-        <tr><td>EcoBot (diferencial)</td><td>7 perguntas respondidas</td><td>✅</td></tr>
+        <tr><td>CicloBot (diferencial)</td><td>7 perguntas respondidas</td><td>✅</td></tr>
         <tr><td>Lighthouse Acessibilidade ≥ 90</td><td>A confirmar após deploy</td><td>⏳</td></tr>
         <tr><td>Deploy com HTTPS</td><td>A confirmar após merge do PR</td><td>⏳</td></tr>
       </tbody>
@@ -379,7 +379,7 @@
     </ol>
     <p class="pequeno" style="font-size:20px">Plano B: vídeo gravado da demo salvo + site local do .zip</p>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:20px">
-      <span class="url-destaque">https://agenteorelhas.github.io/ecoconecta/</span>
+      <span class="url-destaque">https://agenteorelhas.github.io/recircuito/</span>
       <p style="font-size:30px;font-weight:800">Obrigado! Ficamos à disposição para perguntas. 🌿</p>
     </div>
   </section>

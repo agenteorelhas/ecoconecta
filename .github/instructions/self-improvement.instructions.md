@@ -18,9 +18,9 @@ As regras nasceram junto com o site. Conforme o código evolui, padrões novos a
 - Registrar a mudança no `docs/diario-de-bordo.md`.
 
 ## Exemplo
-O erro "heading h4 follows h2" voltou em 8 páginas (título do EcoBot). Proposta aceita em `html5.mdc`:
+O erro "heading h4 follows h2" voltou em 8 páginas (título do CicloBot). Proposta aceita em `html5.mdc`:
 ```diff
-+ - Não pular nível de título; o título do EcoBot é `h2`.
++ - Não pular nível de título; o título do CicloBot é `h2`.
 ```
 
 ## Erros a evitar

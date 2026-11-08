@@ -1,4 +1,4 @@
-# Diário de Bordo — EcoConecta
+# Diário de Bordo — Recircuito
 
 Registro datado das decisões, dificuldades e aprendizados da equipe entre **01/10/2026** e **07/11/2026**.
 
@@ -9,7 +9,7 @@ Registro datado das decisões, dificuldades e aprendizados da equipe entre **01/
 ## 01/10/2026 — Definição do tema
 
 - **O que foi feito:** reunião de abertura; leitura dos roteiros da AV A2 (MVP) e AV A1 (entrega final); levantamento de temas de sustentabilidade.
-- **Decisões:** escolhemos **lixo eletrônico**, porque o Brasil é o 5.º maior gerador do mundo e o tema une meio ambiente (ODS 12 e 13) e inclusão digital (ODS 10). Nome do projeto: **EcoConecta**.
+- **Decisões:** escolhemos **lixo eletrônico**, porque o Brasil é o 5.º maior gerador do mundo e o tema une meio ambiente (ODS 12 e 13) e inclusão digital (ODS 10). Nome do projeto: **Recircuito**.
 - **Dificuldades:** o tema "reciclagem" era amplo demais; recortamos para resíduos eletroeletrônicos.
 - **Aprendizados:** um problema bem delimitado facilita escrever objetivos mensuráveis.
 
@@ -41,11 +41,11 @@ Registro datado das decisões, dificuldades e aprendizados da equipe entre **01/
 - **Dificuldades:** a validação nativa do navegador impedia o evento `submit`, então nossas mensagens nunca apareciam.
 - **Aprendizados:** *progressive enhancement* — o HTML funciona sozinho e o JS melhora a experiência.
 
-## 27/10/2026 — Acessibilidade, alto contraste e EcoBot
+## 27/10/2026 — Acessibilidade, alto contraste e CicloBot
 
-- **O que foi feito:** link "pular para o conteúdo", `aria-current` no menu, `aria-live` nas mensagens, alto contraste persistente e o assistente EcoBot.
+- **O que foi feito:** link "pular para o conteúdo", `aria-current` no menu, `aria-live` nas mensagens, alto contraste persistente e o assistente CicloBot.
 - **Decisões:** o lightbox da galeria devolve o foco ao botão que o abriu e fecha com `Esc`.
-- **Dificuldades:** o título do EcoBot era `h4` e gerava erro de hierarquia de títulos no validador; trocamos por `h2`.
+- **Dificuldades:** o título do CicloBot era `h4` e gerava erro de hierarquia de títulos no validador; trocamos por `h2`.
 - **Aprendizados:** testar com o NVDA mostrou problemas que não aparecem visualmente.
 
 ## 03/11/2026 — Páginas finais, mídia e testes
@@ -57,7 +57,7 @@ Registro datado das decisões, dificuldades e aprendizados da equipe entre **01/
 
 ## 07/11/2026 — GitHub, deploy e apresentação
 
-- **O que foi feito:** branch `feature/site-ecoconecta`, pull request para `main`, documentação final e roteiro da apresentação.
+- **O que foi feito:** branch `feature/site-recircuito`, pull request para `main`, documentação final e roteiro da apresentação.
 - **Decisões:** GitHub Pages como hospedagem (gratuito, HTTPS automático) — ver [orcamento.md](orcamento.md).
 - **Dificuldades:** garantir commits de todos os integrantes; cada um faz pelo menos um commit da sua parte antes do merge.
 - **Aprendizados:** PR com descrição clara facilita a revisão e serve de evidência para a banca.
@@ -92,7 +92,7 @@ Registro datado das decisões, dificuldades e aprendizados da equipe entre **01/
 
 **Prompt 1 — estrutura das páginas**
 
-> "Crie as 9 páginas HTML restantes do EcoConecta reaproveitando o mesmo header, nav e footer do index.html, com `aria-current="page"` no link ativo, alto contraste e EcoBot em todas. Sem bibliotecas externas, tudo em pt-BR."
+> "Crie as 9 páginas HTML restantes do Recircuito reaproveitando o mesmo header, nav e footer do index.html, com `aria-current="page"` no link ativo, alto contraste e CicloBot em todas. Sem bibliotecas externas, tudo em pt-BR."
 
 *Resultado:* páginas geradas a partir de um modelo único, o que garantiu menu e rodapé idênticos. Aceito após validação no W3C (0 erros).
 

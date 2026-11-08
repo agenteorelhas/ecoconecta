@@ -1,5 +1,5 @@
 /* ========================================
-   EcoConecta – Folha de Estilo Principal
+   Recircuito – Folha de Estilo Principal
    HTML5 + CSS3 puro (sem bibliotecas)
    ======================================== */
 
@@ -660,7 +660,7 @@ body.alto-contraste header,
 body.alto-contraste footer,
 body.alto-contraste .hero,
 body.alto-contraste .page-header,
-body.alto-contraste .ecobot-titulo,
+body.alto-contraste .ciclobot-titulo,
 body.alto-contraste thead th { color: #fff; }
 body.alto-contraste h1,
 body.alto-contraste h2,
@@ -680,7 +680,7 @@ body.alto-contraste .filtro-noticias button:focus { background: #ffff00; color: 
 body.alto-contraste .btn-secundario,
 body.alto-contraste .filtro-noticias button,
 body.alto-contraste .badge,
-body.alto-contraste .ecobot-btn { background: #000; color: #ffff00; border: 2px solid #ffff00; }
+body.alto-contraste .ciclobot-btn { background: #000; color: #ffff00; border: 2px solid #ffff00; }
 body.alto-contraste .footer-grid a { color: #ffff00; }
 body.alto-contraste .msg-erro { color: #ff8a80; }
 body.alto-contraste .form-sucesso { border-color: #ffff00; background: #000; }

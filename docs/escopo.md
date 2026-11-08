@@ -1,11 +1,11 @@
-# Escopo do Projeto — EcoConecta
+# Escopo do Projeto — Recircuito
 
 ## 1. Identificação
 
 | Item | Descrição |
 |---|---|
-| Nome da equipe | EcoConecta |
-| Nome do projeto/site | EcoConecta — Site de Conscientização sobre Lixo Eletrônico |
+| Nome da equipe | Recircuito |
+| Nome do projeto/site | Recircuito — Site de Conscientização sobre Lixo Eletrônico |
 | Integrantes | Joaquim Martins Ferreira Neto (RGM 47609630); Gabriel Cabrera Conceição (RGM 47657499); Guilherme Reis (RGM 47513438); Gabriel Franco (RGM 47451289) |
 | Data | 06/10/2026 (versão inicial) — revisado em 07/11/2026 |
 | Professor/disciplina | Prof. Paulo Fratta — DEV. Front-End, Curso Superior de Informática, UNICID |
@@ -52,7 +52,7 @@
 
 - **Formulário de contato:** nome, e-mail, telefone, data, quantidade de equipamentos, assunto e mensagem.
 - **Galeria, mídia e notícias:** conforme tabela acima.
-- **Navegação principal:** menu fixo no topo com as 10 páginas, menu hambúrguer no celular, rodapé com atalhos e EcoBot (FAQ) em todas as páginas.
+- **Navegação principal:** menu fixo no topo com as 10 páginas, menu hambúrguer no celular, rodapé com atalhos e CicloBot (FAQ) em todas as páginas.
 
 ## 6. Escopo Não Funcional
 
@@ -84,7 +84,7 @@ Todas as páginas se ligam entre si pelo menu principal (header) e pelo rodapé.
 - **Tom de voz:** informativo, acolhedor e direto; frases curtas.
 - **Cores:** verde-escuro `#1b5e20`, verde-médio `#2e7d32`, verde-claro `#4caf50`, verde-suave `#c8e6c9`, amarelo `#f9a825` (destaque).
 - **Tipografia:** Segoe UI / Arial (fontes do sistema, sem download), base de 18 px.
-- **Logotipo:** ícone 🌿 + "EcoConecta" em negrito.
+- **Logotipo:** ícone 🌿 + "Recircuito" em negrito.
 - **Fontes:** dados do Global E-waste Monitor 2020/2024, Lei 12.305/2010 e Decreto 10.240/2020; imagens placeholder (placehold.co) e imagem própria da equipe; vídeo do canal Circuito Ambiental; mapas do OpenStreetMap.
 
 ## 9. Tecnologias e Ferramentas

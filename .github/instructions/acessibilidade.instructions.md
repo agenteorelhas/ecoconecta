@@ -8,7 +8,7 @@ applyTo: "**/*.html"
 Garantir que pessoas com deficiência usem todo o site (WCAG 2.1 AA).
 
 ## Contexto
-PCD é público prioritário. O site tem alto contraste, skip link e EcoBot acessível.
+PCD é público prioritário. O site tem alto contraste, skip link e CicloBot acessível.
 
 ## Regras
 - `alt` descritivo em imagens informativas; ícones decorativos com `aria-hidden="true"`.

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Medidas de acessibilidade e inclusão para pessoas com deficiência no site EcoConecta.">
+  <meta name="description" content="Medidas de acessibilidade e inclusão para pessoas com deficiência no site Recircuito.">
   <meta name="keywords" content="lixo eletrônico, e-waste, reciclagem, sustentabilidade, ecologia">
-  <meta name="author" content="Equipe EcoConecta – UNICID Front-End">
-  <title>EcoConecta | Acessibilidade</title>
+  <meta name="author" content="Equipe Recircuito – UNICID Front-End">
+  <title>Recircuito | Acessibilidade</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/ecobot.css">
+  <link rel="stylesheet" href="css/ciclobot.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
@@ -16,9 +16,9 @@
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <a class="logo" href="index.html" aria-label="EcoConecta – Página Inicial">
+      <a class="logo" href="index.html" aria-label="Recircuito – Página Inicial">
         <span class="logo-icon" aria-hidden="true">🌿</span>
-        <span class="logo-text">EcoConecta</span>
+        <span class="logo-text">Recircuito</span>
       </a>
       <button id="menu-toggle" aria-controls="nav-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
       <nav id="nav-principal" aria-label="Navegação principal">
@@ -50,7 +50,7 @@
     <section aria-labelledby="sec-compromisso">
       <div class="container">
         <h2 id="sec-compromisso">Nosso compromisso com a WCAG 2.1 AA</h2>
-        <p>O EcoConecta segue as <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1, nível AA, e a Lei Brasileira de Inclusão (Lei 13.146/2015). Pessoas com deficiência visual, auditiva, motora ou cognitiva são público prioritário do projeto.</p>
+        <p>O Recircuito segue as <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1, nível AA, e a Lei Brasileira de Inclusão (Lei 13.146/2015). Pessoas com deficiência visual, auditiva, motora ou cognitiva são público prioritário do projeto.</p>
         <div class="grid-cards">
           <div class="card"><h3>👁 Perceptível</h3><p>Textos alternativos, contraste adequado e legendas.</p></div>
           <div class="card"><h3>⌨ Operável</h3><p>Todo o site funciona apenas com o teclado.</p></div>
@@ -66,7 +66,7 @@
         <ul class="lista-check">
           <li><strong>Texto alternativo (alt)</strong> descritivo em todas as imagens informativas.</li>
           <li><strong>Contraste mínimo de 4,5:1</strong> entre texto e fundo, além do modo de <strong>alto contraste</strong> (botão no topo), que fica salvo no navegador.</li>
-          <li><strong>Navegação por teclado</strong> em menus, botões, formulário, galeria e EcoBot.</li>
+          <li><strong>Navegação por teclado</strong> em menus, botões, formulário, galeria e CicloBot.</li>
           <li><strong>Idioma declarado</strong> com <code>lang="pt-BR"</code> para a pronúncia correta dos leitores de tela.</li>
           <li><strong>ARIA</strong>: <code>aria-label</code>, <code>aria-expanded</code>, <code>aria-current</code>, <code>aria-invalid</code> e regiões <code>aria-live</code>.</li>
           <li><strong>Link "Pular para o conteúdo"</strong> como primeiro item focável de cada página.</li>
@@ -89,7 +89,7 @@
               <tr><td><kbd>Tab</kbd></td><td>Avança para o próximo link, botão ou campo.</td></tr>
               <tr><td><kbd>Shift</kbd> + <kbd>Tab</kbd></td><td>Volta para o elemento anterior.</td></tr>
               <tr><td><kbd>Enter</kbd></td><td>Abre links, aciona botões e envia o formulário.</td></tr>
-              <tr><td><kbd>Espaço</kbd></td><td>Aciona botões (alto contraste, filtros, EcoBot).</td></tr>
+              <tr><td><kbd>Espaço</kbd></td><td>Aciona botões (alto contraste, filtros, CicloBot).</td></tr>
               <tr><td><kbd>Esc</kbd></td><td>Fecha o menu no celular e a imagem ampliada da galeria.</td></tr>
               <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Rolam a página e escolhem opções na lista de assuntos do formulário.</td></tr>
             </tbody>
@@ -103,7 +103,7 @@
       <div class="container">
         <h2 id="sec-declaracao">Declaração de acessibilidade</h2>
         <div class="destaque">
-          <p>A equipe EcoConecta declara que este site foi desenvolvido para atender às diretrizes WCAG 2.1 nível AA. A conformidade foi verificada com o W3C Validator, o Lighthouse (Chrome DevTools) e testes manuais de navegação por teclado e com o leitor de tela NVDA.</p>
+          <p>A equipe Recircuito declara que este site foi desenvolvido para atender às diretrizes WCAG 2.1 nível AA. A conformidade foi verificada com o W3C Validator, o Lighthouse (Chrome DevTools) e testes manuais de navegação por teclado e com o leitor de tela NVDA.</p>
           <p>Se você encontrar alguma barreira de acesso, fale conosco pela página de <a href="contato.html">Contato</a> escolhendo o assunto "Dúvida". Responderemos em até 5 dias úteis.</p>
           <p><strong>Última revisão:</strong> <time datetime="2026-11-07">7 de novembro de 2026</time>.</p>
         </div>
@@ -124,18 +124,18 @@
     </section>
   </main>
 
-  <!-- ECOBOT -->
-  <div class="ecobot-container" aria-live="polite">
-    <button id="ecobot-toggle" class="ecobot-btn" aria-expanded="false" aria-controls="ecobot-painel" title="Abrir assistente EcoBot">
-      🤖 EcoBot
+  <!-- CICLOBOT -->
+  <div class="ciclobot-container" aria-live="polite">
+    <button id="ciclobot-toggle" class="ciclobot-btn" aria-expanded="false" aria-controls="ciclobot-painel" title="Abrir assistente CicloBot">
+      🤖 CicloBot
     </button>
-    <div id="ecobot-painel" class="ecobot-painel" hidden role="dialog" aria-label="Assistente EcoBot">
-      <h2 class="ecobot-titulo">🌿 EcoBot – Tire suas dúvidas!</h2>
-      <div id="ecobot-chat" class="ecobot-chat" aria-live="polite" aria-atomic="false"></div>
-      <div class="ecobot-input-area">
-        <label for="ecobot-input" class="visually-hidden">Sua pergunta</label>
-        <input id="ecobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
-        <button id="ecobot-enviar" class="btn">Enviar</button>
+    <div id="ciclobot-painel" class="ciclobot-painel" hidden role="dialog" aria-label="Assistente CicloBot">
+      <h2 class="ciclobot-titulo">🌿 CicloBot – Tire suas dúvidas!</h2>
+      <div id="ciclobot-chat" class="ciclobot-chat" aria-live="polite" aria-atomic="false"></div>
+      <div class="ciclobot-input-area">
+        <label for="ciclobot-input" class="visually-hidden">Sua pergunta</label>
+        <input id="ciclobot-input" type="text" placeholder="Ex: Onde descartar pilhas?" autocomplete="off">
+        <button id="ciclobot-enviar" class="btn">Enviar</button>
       </div>
     </div>
   </div>
@@ -144,7 +144,7 @@
   <footer>
     <div class="footer-grid">
       <div>
-        <h3>EcoConecta</h3>
+        <h3>Recircuito</h3>
         <p style="font-size:.9rem;opacity:.85;">Plataforma de conscientização sobre descarte correto de lixo eletrônico. UNICID – Front-End 2026.</p>
       </div>
       <div>
@@ -167,7 +167,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 EcoConecta – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
+      <p>© 2026 Recircuito – UNICID Curso Superior de Informática – Front-End. Conteúdo educacional.</p>
     </div>
   </footer>
 

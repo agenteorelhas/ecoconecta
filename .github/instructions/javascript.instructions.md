@@ -1,5 +1,5 @@
 ---
-description: Padrões de JavaScript puro do EcoConecta
+description: Padrões de JavaScript puro do Recircuito
 applyTo: "**/*.js"
 ---
 # JavaScript
@@ -14,7 +14,7 @@ JS puro (ES6+), sem bibliotecas. Cada funcionalidade é um módulo IIFE que sai 
 - `'use strict'`; um módulo IIFE por funcionalidade, com comentário de seção.
 - Buscar elementos por `id`/classe e retornar se não existirem.
 - Formulário: `preventDefault`, mensagem em `#erro-<campo>`, classes `erro`/`ok` e `aria-invalid`.
-- `localStorage` com prefixo `ecoconecta_`.
+- `localStorage` com prefixo `recircuito_`.
 - Atualizar atributos ARIA (`aria-expanded`, `aria-pressed`) junto com o estado visual.
 - Usar `textContent` para texto do usuário, nunca `innerHTML`.
 
@@ -24,14 +24,14 @@ Trecho real de `js/main.js`:
 btn.addEventListener('click', () => {
   const ativo = document.body.classList.toggle('alto-contraste');
   btn.setAttribute('aria-pressed', ativo);
-  localStorage.setItem('ecoconecta_contraste', ativo ? 'alto' : 'normal');
+  localStorage.setItem('recircuito_contraste', ativo ? 'alto' : 'normal');
 });
 ```
 
 ## Erros a evitar
 - Importar biblioteca ou script de CDN.
 - Inserir texto digitado pelo usuário com `innerHTML`.
-- Ordem de gatilhos do EcoBot com termo genérico antes do específico.
+- Ordem de gatilhos do CicloBot com termo genérico antes do específico.
 
 ## Quando perguntar
 Antes de criar novo arquivo `.js` ou nova chave de `localStorage`.

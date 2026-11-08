@@ -14,7 +14,7 @@ Regras do Cursor ficam em `.cursor/rules/*.mdc`. O espelho do VS Code (GitHub Co
 ## Regras
 - Pasta: `.cursor/rules/`; extensão `.mdc`; nome em kebab-case.
 - Frontmatter: `description`, `globs` e `alwaysApply`. No espelho do VS Code use `applyTo` com o mesmo glob.
-- `alwaysApply: true` só em `projeto-ecoconecta`, `cursor-rules` e `self-improvement`. Regras de linguagem usam glob.
+- `alwaysApply: true` só em `projeto-recircuito`, `cursor-rules` e `self-improvement`. Regras de linguagem usam glob.
 - Uma preocupação por arquivo, menos de 80 linhas.
 - Corpo com seis seções, nesta ordem:
   1. Objetivo
@@ -29,7 +29,7 @@ Regras do Cursor ficam em `.cursor/rules/*.mdc`. O espelho do VS Code (GitHub Co
 Frontmatter real de `.cursor/rules/html5.mdc`:
 ```yaml
 ---
-description: Padrões de HTML5 semântico para as páginas do EcoConecta
+description: Padrões de HTML5 semântico para as páginas do Recircuito
 globs: "**/*.html"
 alwaysApply: false
 ---

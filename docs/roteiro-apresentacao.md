@@ -1,4 +1,4 @@
-# Roteiro da Apresentação — EcoConecta (AV A1)
+# Roteiro da Apresentação — Recircuito (AV A1)
 
 **Tempo total: 20 min** — 10 min de slides (1 a 13), 5 min de demonstração ao vivo (slide 14) e 5 min de perguntas. Todos os integrantes falam. Texto dos slides com **20 pt ou mais**; prefira prints e tabelas.
 
@@ -13,10 +13,10 @@
 ---
 
 ## Slide 1 — Capa
-- **EcoConecta** — Site de conscientização sobre lixo eletrônico
+- **Recircuito** — Site de conscientização sobre lixo eletrônico
 - Equipe: Joaquim Martins Ferreira Neto · Gabriel Cabrera Conceição · Guilherme Reis · Gabriel Franco
 - DEV. Front-End — UNICID — Prof. Paulo Fratta — 2026
-- URL: `https://agenteorelhas.github.io/ecoconecta/` + **QR code** da URL
+- URL: `https://agenteorelhas.github.io/recircuito/` + **QR code** da URL
 - *Evidência:* QR code gerado a partir da URL publicada.
 
 ## Slide 2 — Problema e público
@@ -40,9 +40,9 @@
 
 ## Slide 5 — Arquitetura
 ```
-ecoconecta/
+recircuito/
 ├── index.html … orcamento_hospedagem.html (10 páginas)
-├── css/  style.css · ecobot.css
+├── css/  style.css · ciclobot.css
 ├── js/   main.js
 ├── img/  assets/  (imagem, vídeo e áudio)
 ├── docs/ README, diário, escopo, orçamento, testes, MVP
@@ -72,10 +72,10 @@ form.addEventListener('submit', (e) => {
 
 // Rascunho: cada tecla digitada é salva no navegador
 cfg.el.addEventListener('input', () => {
-  localStorage.setItem('ecoconecta_form_' + key, cfg.el.value);
+  localStorage.setItem('recircuito_form_' + key, cfg.el.value);
 });
 ```
-- Outras interações: menu mobile, alto contraste, filtro de notícias, EcoBot, contadores e lightbox.
+- Outras interações: menu mobile, alto contraste, filtro de notícias, CicloBot, contadores e lightbox.
 
 ## Slide 8 — Acessibilidade e responsividade
 - Skip link, `lang="pt-BR"`, `aria-current`, `aria-live`, foco visível, alto contraste, `prefers-reduced-motion`.
@@ -84,7 +84,7 @@ cfg.el.addEventListener('input', () => {
 ## Slide 9 — Processo no GitHub
 - Fluxo: branch `feature/...` → commit → pull request → revisão → merge na `main` → GitHub Pages publica.
 - Padrão de commits: `feat:`, `fix:`, `docs:`.
-- *Evidências:* print do gráfico de commits (Insights → Contributors) e do PR `feat: site EcoConecta completo - entrega AV A1`.
+- *Evidências:* print do gráfico de commits (Insights → Contributors) e do PR `feat: site Recircuito completo - entrega AV A1`.
 
 ## Slide 10 — Uso de IA
 - Ferramenta: Abacus AI Agent + regras em `.cursor/rules/`.
@@ -99,7 +99,7 @@ cfg.el.addEventListener('input', () => {
 | **GitHub Pages (escolhida)** | R$ 0 | Automático |
 | Netlify | R$ 0 / ≈ R$ 105 | Automático |
 | Vercel | R$ 0 / ≈ R$ 110 | Automático |
-- Domínio sugerido: `ecoconecta.eco.br` — R$ 40/ano. **Custo do 1.º ano: R$ 40.**
+- Domínio sugerido: `recircuito.eco.br` — R$ 40/ano. **Custo do 1.º ano: R$ 40.**
 
 ## Slide 12 — Objetivos alcançados
 | Objetivo planejado | Entregue | Status |
@@ -130,7 +130,7 @@ cfg.el.addEventListener('input', () => {
 | 3 | Contato: enviar vazio, mostrar erros; digitar e-mail inválido; enviar certo | `contato.html` | "O JS usa preventDefault e mostra o erro em cada campo." |
 | 4 | Digitar o nome, recarregar (F5): o nome continua | `contato.html` | "O rascunho fica no localStorage." |
 | 5 | Ativar alto contraste, recarregar; navegar com Tab/Enter; abrir e fechar imagem da galeria com Enter/Esc | Header e `galeria.html` | "Tudo funciona só com o teclado." |
-| 6 | Abrir o GitHub: commits e o pull request | github.com/agenteorelhas/ecoconecta | "Cada integrante tem commits; a entrega entrou por PR." |
+| 6 | Abrir o GitHub: commits e o pull request | github.com/agenteorelhas/recircuito | "Cada integrante tem commits; a entrega entrou por PR." |
 
 ### Plano B (se a internet falhar)
 1. Vídeo curto (1–2 min) gravado da demonstração, salvo no notebook e no pendrive.

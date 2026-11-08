@@ -1,5 +1,5 @@
 ---
-description: Padrões de HTML5 semântico para as páginas do EcoConecta
+description: Padrões de HTML5 semântico para as páginas do Recircuito
 applyTo: "**/*.html"
 ---
 # HTML5
@@ -8,16 +8,16 @@ applyTo: "**/*.html"
 Garantir páginas semânticas, válidas no W3C (0 erros) e consistentes entre si.
 
 ## Contexto
-São 10 páginas estáticas que compartilham header, nav, footer e EcoBot.
+São 10 páginas estáticas que compartilham header, nav, footer e CicloBot.
 
 ## Regras
 - Estrutura: `header` > `nav`, `main#conteudo-principal` > `section[aria-labelledby]`, `footer`.
-- Um único `h1` por página; não pular níveis (o título do EcoBot é `h2`).
+- Um único `h1` por página; não pular níveis (o título do CicloBot é `h2`).
 - Sem `role` redundante (`header`/`footer` já são banner/contentinfo).
 - Imagens com `alt`, `width` e `height`; mídia com `controls` e texto alternativo.
 - Tabelas com `caption` e `th scope="col"`.
 - Iframes com `title` e `loading="lazy"`; nunca `frameborder`.
-- Links de CSS: `css/style.css` e `css/ecobot.css`; script: `js/main.js` antes de `</body>`.
+- Links de CSS: `css/style.css` e `css/ciclobot.css`; script: `js/main.js` antes de `</body>`.
 
 ## Exemplo
 Trecho real de `noticias.html`:
